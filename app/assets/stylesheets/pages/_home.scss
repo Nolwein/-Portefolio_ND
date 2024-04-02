@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  background-color: #403d40;
 }
 
 .banner h1 {
@@ -12,6 +13,8 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
 .banner p {
@@ -19,38 +22,10 @@
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-
-// ---------------------------------Footer-------------------------------------------//
-
-.footer {
-  background: #F4F4F4;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  justify-content: center;
 }
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-.footer-links a {
-  color: black;
-  opacity: 0.15;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
-.footer-links a:hover {
-  opacity: 1;
-}
-.footer .fa-heart {
-  color: #D23333;
-}
-
-// ---------------------------------Card-------------------------------------------//
+// ---------------------------------Card description No-------------------------------------------//
 
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
@@ -85,18 +60,19 @@ input[type=radio] {
 
 .card {
   position: absolute;
-  width: 60%;
+  width: 80%;
   height: 100%;
   left: 0;
   right: 0;
   margin: auto;
   transition: transform .4s ease;
   cursor: pointer;
+  border: none;
 }
 
 .container {
-  // width: 100%;
-  max-width: 100%px;
+  width: 100%;
+  max-width: 800px;
   max-height: 600px;
   height: 100%;
   transform-style: preserve-3d;
@@ -104,7 +80,6 @@ input[type=radio] {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #c394f8;
 }
 
 .cards {
@@ -227,4 +202,84 @@ img {
 
 #item-3:checked ~ .player #test  {
   transform: translateY(-80px);
+}
+// ---------------------------------Description project cards-------------------------------------------//
+* {
+  box-sizing: border-box;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.project-card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.container-card {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+// ---------------------------------Footer-------------------------------------------//
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
 }

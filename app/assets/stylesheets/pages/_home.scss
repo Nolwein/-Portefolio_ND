@@ -1,8 +1,24 @@
 // ---------------------------------Banner-------------------------------------------//
+.name-card {
+  background-color: #D23333;
+  height: 45px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 50px 0;
+  padding: 30px 0;
   background-color: black;
 }
 
@@ -23,6 +39,7 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 .round-img {
@@ -32,6 +49,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
+    margin-top: 15px
 }
 
 // ---------------------------------Card description No-------------------------------------------//

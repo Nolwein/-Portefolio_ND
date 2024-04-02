@@ -21,23 +21,19 @@
 </nav>
 
 <div class="banner">
-  <div class="description">
-    <div class="card-border-top">
-    </div>
-    <div class="img">
-    </div>
-    <span> Nolwein Delsaut</span>
-    <p class="job"> Web Designer & web developement</p>
-    <button>Click</button>
+    <%= image_tag "photo1.avif", alt: "photo1", class:"round-img" %>
+    <h1>Nolwein Delsaut</h1>
+    <h2>Web Designer & web developement</h2>
+    <p><i class="fa-solid fa-quote-right" style="color: #FFD43B;"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.🌻<i class="fa-solid fa-quote-right" style="color: #FFD43B;"></i></p>
   </div>
 </div>
 
-<h1 id="portfolio">Portfolio</h1>
+<h3 id="portfolio">Portfolio</h3>
 
 <%= render partial: 'shared/carrousel' %>
 
 <div class="container-form" id="contact">
-  <h1>Contact</h1>
+  <h3>Contact</h3>
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">

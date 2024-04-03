@@ -2,14 +2,14 @@
   background-color: black;
   border-bottom: 0.5px solid #fff;
 }
-a {
+.navbar-link {
   color: white;
   text-decoration: none;
   display: flex;
   margin-right: 60px;
 }
 
-a {
+.navbar-link {
   background:
     linear-gradient(
       to right,
@@ -28,6 +28,6 @@ a {
   transition: background-size 400ms;
 }
 
-a:hover {
+.navbar-link:hover {
   background-size: 0 3px, 100% 3px;
 }
